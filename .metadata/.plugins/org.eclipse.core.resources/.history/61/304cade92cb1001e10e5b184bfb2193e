@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		boolean endGame = false;
+		
+		
+		while(endGame == false) {
+			String response = null;
+			Scanner scanner = new Scanner(System.in);
+			String reversedWord = "";
+			System.out.println("Enter you string:");
+			response = scanner.nextLine();
+			for(int i = (response.length() - 1); i>=0; i--) {
+				reversedWord +=response.charAt(i);
+			}
+			
+			System.out.println("You're reversed word is "+reversedWord);
+			System.out.println("Do you want to try another word? Y or N");
+			response = scanner.nextLine();
+			
+		}
+		
+		
+		//public static void quitRestartGame() {
+		}
+	}
+
+}

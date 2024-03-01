@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Random random = new Random();
+		Scanner scanner = new Scanner(System.in); 
+		
+		int randomNumber = random.nextInt(100), counter = 0, answer;
+		
+		while(counter == 5 || answer == randomNumber) {
+			
+			System.out.println("Enter your number");
+			
+		}
+	}
+
+}

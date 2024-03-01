@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		startGame(true);
+	}
+	
+
+	public static void startGame(boolean endGame) {
+		//System.out.println(endGame);
+		while(endGame == true) {
+			String response = null;
+			Scanner scanner = new Scanner(System.in);
+			String reversedWord = "";
+			System.out.println("Enter you word:");
+			response = scanner.nextLine();
+			for(int i = (response.length() - 1); i>=0; i--) {
+				reversedWord +=response.charAt(i);
+			}
+			
+			System.out.println("You're reversed word is: "+reversedWord);
+			System.out.println("Do you want to enter another word? Type Y/y for yes and N/n for no.");
+			response = scanner.nextLine();
+			
+			if(response.equalsIgnoreCase("n")) {
+				System.out.println("Thanks for playing!");
+				System.out.println("endgame: "+endGame);
+				break;
+			}
+			else if(!response.equalsIgnoreCase("y"))
+			{
+				System.out.println("riherwidowe");
+			}
+				
+		}
+	}
+	
+	
+	
+	
+
+}

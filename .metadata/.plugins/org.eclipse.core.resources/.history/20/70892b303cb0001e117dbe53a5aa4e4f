@@ -1,0 +1,20 @@
+import java.util.Scanner; 
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		System.out.println(sum(1, 2));
+	}
+
+	public static int sum(int a, int b) {
+		Scanner answer = new Scanner(System.in);
+		System.out.println("What is your first nummber?");
+		a = answer.nextInt();
+		System.out.println("What is your second nummber?");
+		b = answer.nextInt();
+		answer.close();
+		return a+b;
+		
+	}
+}
